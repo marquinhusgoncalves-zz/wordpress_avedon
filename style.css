@@ -1,0 +1,566 @@
+/*
+Theme name: Avedon TS Theme
+Theme URI: http://avedon.com.br
+Description: Avedon Tecnologia em Serviços
+Version: 1
+Author: Daniel Mota
+Author URI: http://behance.net/danielsmota
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,200);
+/*@import url('css/bootstrap.css');*/
+
+body {
+	background-color: #9a9a9c !important;
+}
+#stage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1040px;
+	padding: 0 !important;
+}
+a:focus {
+    outline: none !important;
+}
+h1 {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 700 !important;
+	font-size: 25px !important;
+	line-height: 1.4em !important;
+	color: black !important;
+	margin-top: 0 !important;
+}
+p {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	line-height: 1.6em !important;
+	letter-spacing: 0em !important;
+	color: black !important;
+}
+.lista {
+	margin-left: 0 !important;
+}
+.lista li {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	line-height: 1.6em !important;
+	letter-spacing: 0em !important;
+	color: black !important;
+}
+hr {
+	border: 0 !important;
+	border-top: 1px solid black !important;
+	margin: 2% !important;
+}
+.text-link {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 13px;
+	line-height: 1.8em;
+	letter-spacing: 0.1em;
+	color: white;
+	text-decoration: none;
+}
+.text-link:hover, .text-link:focus {
+	padding-bottom: 10px;
+	color: white;
+	border-bottom: solid 2px white;
+	text-decoration: none;
+	outline: none;
+}
+li {
+	color: white !important;
+	list-style-position: inside;
+}
+ul, ol {
+	margin-bottom: 0 !important;
+}
+div > ul {
+	padding-left: 0 !important;
+}
+nav {
+	display: inline-block;
+	float: right;
+}
+nav ul li {
+	display: inline-block;
+}
+nav a {
+	display: inline-block;
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	color: #58595B;
+	text-decoration: none;
+	padding-bottom: 14px;
+	margin: 13px 12px;
+}
+nav a:hover, nav a:focus {
+	color: black !important;
+	text-decoration: none;
+	border-bottom: solid 2px black;
+	padding-bottom: 12px;
+}
+nav a:visited {
+	color: #58595B;
+	text-decoration: none;
+}
+nav .bt-contato {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: white !important;
+	text-decoration: none;
+	padding: 16px 20px;
+	background: #58595B;
+	border: none !important;
+}
+nav .bt-contato:hover {
+	background: black;
+}
+.sidebar {
+	transition: all .15s ease;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: -220px;
+	width: 220px;
+	padding: 60px 30px;
+	background: white;
+	z-index: 90;
+	display: none;
+}
+.toggle {
+	transition: all .15s ease;
+	font-size: 36px;
+	color: black;
+	position: fixed;
+	top: 25px;
+	right: 40px;
+	z-index: 99;
+	display: none;
+}
+#sidebartoggler {
+	display: none;
+}
+#sidebartoggler:checked + .toggle {
+	top: 5px;
+	right: 170px;
+	color: black;
+}
+#sidebartoggler:checked ~ .sidebar {
+	right: 0px;
+}
+.submenu {
+	top: 110px;
+	width: 100%;
+	height: 50px;
+	background-color: #2b2b2b;
+	display: table;
+	z-index: 99;
+	cursor: pointer;
+}
+.submenu ul {
+	margin-bottom: 0px;
+	display: table-row;
+	text-align: center;
+}
+.submenu ul li {
+	width: 25%;
+	height: 50px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.submenu ul li a {
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	color: #dbdbd8;
+	text-decoration: none;
+	padding: 15px;
+	display: list-item;
+}
+.submenu ul li a:hover {
+	color: white;
+	background-color: #931933;
+}
+.wrap {
+	top: 110px;
+	height: 50px;
+	background-color: #2b2b2b;
+	display: table;
+	z-index: 99;
+	cursor: pointer;
+}
+.wrap li {
+	list-style: none;
+}
+.wrap:hover a {
+	position: relative;
+}
+.wrap:hover a[href*="menu"] {
+	display: none;
+}
+.wrap a {
+	position: absolute;
+	display: block;
+	color: #dbdbd8 !important;
+	background-color: #2b2b2b;
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	padding: 15px 4%;
+}
+.wrap a:hover {
+	background: #58595B;
+	text-decoration: none;
+}
+.wrap a:focus {
+	background: #58595B;
+	text-decoration: none;
+}
+#stickyribbon {
+	z-index: 99 !important;
+	padding: 0;
+	margin: 0;
+}
+.topo_fixed {
+	position: fixed;
+}
+.tabela img {
+	width: 100%;
+	max-width: 400px;
+}
+.icone {
+	padding: 4% 0;
+	width: 40px;
+}
+.photos {
+	height: auto;
+	min-height: 350px !important;
+	padding: 4%;
+	margin: 20px 0;
+	background: url("../avedon_theme/img/selecao_pessoal.jpg") center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header_menu {
+	width: 100%;
+	height: 110px;
+	background-color: white;
+	z-index: 99;
+	box-shadow: 0px 2px 2px rgba(128,128,128,0.5);
+}
+footer {
+	height: auto;
+	min-height: 250px;
+	background-color: #2b2b2b;
+}
+.margens-padrao {
+	height: auto;
+	padding: 2% 4%;
+}
+.diferenca {
+	width: 100%;
+	height: 110px;
+}
+.diferenca_menu {
+	width: 100%;
+	height: 160px;
+}
+.logo-footer {
+	height: 60px;
+	margin: 40px 8%;
+}
+.text-adress {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 200 !important;
+	font-size: 13px !important;
+	line-height: 1.6em !important;
+	letter-spacing: 0.1em !important;
+	color: white !important;
+}
+.main {
+	min-height: calc(100% - 250px)
+}
+.banner {
+	height: 370px;
+	background: url("../avedon_theme/img/bg_index.jpg") center;
+}
+.text-banner {
+	width: 300px;
+	height: 230px;
+	padding: 30px;
+	border: solid 2px white;
+	position: relative;
+	top: 70px;
+	left: 5%;
+}
+.text-banner h1 {
+	text-transform: uppercase;
+	color: white !important;
+}
+.topo {
+	display: inline-block;
+	color: white !important;
+	width: auto;
+	padding: 10px;
+	border: solid 2px white;
+	position: relative;
+	top: 90px;
+	text-transform: uppercase;
+}
+.cases h1 {
+	text-transform: uppercase;
+}
+.top-size {
+	width: 100%;
+	min-height: 250px;
+	padding: 4% 2%;
+}
+.img-servico {
+	background: url("../avedon_theme/img/img_serv.jpg") right top;
+}
+.img-cases {
+	background: url("../avedon_theme/img/img-cases.jpg") right top;
+}
+.img-clientes {
+	background: url("../avedon_theme/img/img-clientes.jpg") right top;
+}
+.chamada {
+	height: auto;
+	min-height: 330px;
+	background-color: #fbf9f9;
+}
+.box {
+	padding: 4%;
+}
+.titulo {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: 0em;	
+	color: black;
+}
+.texto {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.6em;
+	letter-spacing: 0em;
+	color: black;
+}
+.texto li {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	line-height: 1.6em !important;
+	letter-spacing: 0em !important;
+	color: black !important;
+}
+.texto li:last-child {
+	margin-bottom: 10px;
+}
+.titulo-case {
+	height: auto;
+	padding: 2% 4% 1%;
+	margin-bottom: 4%;
+	background: lightgrey;
+}
+button {
+	font-weight: 500 !important;
+	font-size: 11px !important;
+	color: black;
+	background-color: transparent;
+	border: solid 1px black;
+	padding: 10px;
+	margin-top: 5px;
+}
+button:hover {
+	color: white !important;
+	background-color: black;
+	text-decoration: none;
+}
+button:focus {
+	outline: none;
+}
+.avedon {
+	height: auto;
+	min-height: 370px;
+	padding: 4% 2%;
+	background: url("../avedon_theme/img/bg_avedon.jpg") center;
+}
+.avedon h1 {
+	text-transform: uppercase;
+	color: white !important;
+}
+.avedon p {
+	letter-spacing: 0.1em !important;
+	line-height: 1.8em !important;
+	color: white !important;
+}
+.optimiza {
+	height: auto;
+	min-height: 370px;
+	padding: 4% 2%;
+	background: #931933;
+}
+.optimiza h1 {
+	color: white !important;
+}
+.optimiza p {
+	color: white !important;
+}
+.optimiza span {
+	text-transform: uppercase;
+}
+.adress {
+	padding: 100px 2% 0 4%;
+}
+.social img {
+	width: 38px;
+	height: 38px;
+	padding: 2px;
+	border: solid 1px white;
+	margin-left: 10px;
+}
+input, textarea {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.8em;
+	letter-spacing: 0em;
+	color: black;
+	padding-left: 0px!important;
+	background-color: transparent;
+	padding-bottom: 5px;
+	margin-bottom: 25px !important;
+	border-color: black;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+}
+input:focus, textarea:focus {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: #dbdbd8 !important;
+}
+*::-webkit-input-placeholder {
+    color: black;
+}
+*:-moz-placeholder {
+    color: black;
+}
+*::-moz-placeholder {
+    color: black;
+}
+*:-ms-input-placeholder {
+    color: black;
+}
+:target::before {
+	content: "";
+	display: block;
+	height: 159px;
+	margin-top: -159px;
+}
+.button, .success {
+	display: table;
+	width: auto;
+	background-color: transparent;
+	border: solid 1px black;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+button {
+	font-weight: 500 !important;
+	font-size: 11px !important;
+	color: black;
+	background-color: transparent;
+	border: solid 1px black;
+	padding: 10px;
+	margin-top: 5px;
+}
+button:hover {
+	color: white !important;
+	background-color: black;
+	text-decoration: none;
+}
+button:focus {
+	outline: none;
+}
+.scroll-to-top {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 4%;
+	right: 5%;
+	background: rgba(100, 100, 100, 0.4);
+	color: #FFF;
+	cursor: pointer;
+	display: none;
+	z-index: 99;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 10px;
+	-webkit-transition: background-color 0.3s linear;
+		 -moz-transition: background-color 0.3s linear;
+			 -o-transition: background-color 0.3s linear;
+					transition: background-color 0.3s linear;
+}
+.scroll-to-top:hover {
+	background: #931933;
+	opacity: .8;
+}
+@media (max-width: 767px) {
+	nav ul li {
+	  display: block;
+	}
+}
+@media (max-width: 991px) {
+	.topo {
+		top: 150px;
+		margin-left: 15px;
+	}
+	.topo_fixed {
+		width: 750px !important;
+	}
+	.logo-footer {
+		margin: 25px 2%;
+	}
+	.adress {
+		padding: 5px 4% 20px;
+		padding-left: 4%;
+	}
+	:root:target:before {
+		height: 119px !important;
+		margin-top: -119px !important;
+	}
+	:target:before {
+		height: 119px !important;
+		margin-top: -119px !important;
+	}
+}
+@media (max-width: 1199px) {	
+	.topo_fixed {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {	
+	.topo_fixed {
+		width: 1040px;
+	}
+}
