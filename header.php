@@ -12,8 +12,7 @@
 	<meta name = "viewport" content = "width=device-width, initial-scale=1">
 	<meta name = "format-detection" content = "telephone=no">
 	<link href = "<?php bloginfo('stylesheet_url'); ?>" rel = "stylesheet">
-	<script src = "//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src = "//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -21,7 +20,7 @@
   <div class = "container" style = "background: white">
 
 	<header class = "topo_fixed header_menu">
-		<a href = "<?php echo esc_url( home_url( '/' ) ); ?>"><img style = "height: 80px; margin: 15px 3%; position: absolute" src = "<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt = "avedon"></a>
+		<a href = "<?php echo esc_url( home_url( '/' ) ); ?>"><img style = "height: 80px; margin: 15px 3%; position: absolute" src = "<?php bloginfo('stylesheet_directory');?>/img/avedon30anos.svg" alt = "avedon 30 anos"></a>
 		<input	type = "checkbox" id = "sidebartoggler" name = "" value = "">	
 			<label class = "toggle visible-xs-inline-block" for = "sidebartoggler">☰</label>
 			<nav class = "menu_principal sidebar visible-xs-inline-block"><?php wp_nav_menu(''); ?></nav>

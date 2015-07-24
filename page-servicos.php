@@ -98,7 +98,7 @@
 				<p>Com 30 anos de atuação no mercado e pioneira no gerenciamento de prevenção de perdas, a Avedon se especializou em projetos de consultoria direcionados a otimização dos resultados de seus clientes. A partir de um adequado mapeamento dos riscos, conjugado ao desenvolvimento de uma cultura de prevenção de perdas, o resultado se traduz em ganhos expressivos e mensuráveis que influenciam diretamente na performance das empresas e, em muitos casos, impactam em até 40% do lucro líquido destas organizações após a implantação dos trabalhos da Avedon.</p>
 			</div>
 
-			<div style = "height: auto; padding: 4%; text-align: center">
+			<div style = "height: auto; padding: 4%; text-align: center; background: #f4f1ed">
 				<img class = "hidden-xs" style = "width: 100%; max-width: 780px" src="<?php bloginfo('stylesheet_directory');?>/img/tabela_projeto_780.png" alt = "Prevenção de Perdas" />
 				<img class = "visible-xs-block" style = "width: 100%; max-width: 550px" src="<?php bloginfo('stylesheet_directory');?>/img/tabela_projeto_550.png" alt = "Prevenção de Perdas" />
 			</div>

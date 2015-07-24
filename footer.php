@@ -4,17 +4,17 @@
 		<div style = "margin-left: 2%">
 			<div class = "col-sm-8 col-md-6 adress">
 				<p class = "text-adress">Praça das Gardênias, 4 – Centro Comercial de Alphaville <br>06453-052 - Barueri - SP</p>
-				<p class = "text-adress">Fone (11) 4195-1622</p>
+				<p class = "text-adress noSkypeClass">Fone <span>(11)</span> <span>4208</span><span>-1622</span></p>
 				<a class = "text-link" href = "#">avedon@avedon.com.br</a>
 			</div>
 
 			<div class = "col-sm-4 col-md-3 adress">
-				<div>
+				<div style = "display: none">
 					<a class = "social" href = "#"><img style = "margin-left: 0px" src="<?php bloginfo('stylesheet_directory');?>/img/social-01.svg" alt = "facebook" /></a>
 					<a class = "social" href = "#"><img src = "<?php bloginfo('stylesheet_directory');?>/img/social-02.svg" alt = "linkedin" /></a>
 					<a class = "social" href = "#"><img src = "<?php bloginfo('stylesheet_directory');?>/img/social-03.svg" alt = "twitter" /></a>	
 				</div>
-				<p style = "padding: 40px 0 0; font-size: 12px !important; color: white!important">&copy; <?php echo date("Y"); ?> / <?php bloginfo(); ?></p>
+				<p style = "font-size: 12px !important; color: white!important">&copy; <?php echo date("Y"); ?> / <?php bloginfo(); ?></p>
 			</div>
 		</div>
 
@@ -24,5 +24,9 @@
   </div> <!-- .container -->
 	
 </body>
+
+	<script src = "//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src = "//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <?php wp_footer(); ?>
 </html>
