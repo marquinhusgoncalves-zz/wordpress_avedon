@@ -2,21 +2,10 @@
 
 <div class = "main">
 
-	<div class = "hidden-xs hidden-sm"><?php include("diferenca_menu.php"); ?></div>
-	<div class = "visible-xs-block visible-sm-block"><?php include("diferenca.php"); ?></div>
+	<div class = "diferenca_menu"></div>
 
-	<div class = "topo_fixed wrap hidden-xs hidden-sm" id = "stickyribbon">
-	  <ul>
-	    <li role = "presentation"><a href="#selecao">Seleção de Pessoal</a></li>
-		<li role = "presentation"><a href="#terceirizacao">Terceirização</a></li>
-		<li role = "presentation"><a href="#seguranca">Projetos em Segurança Patrimonial</a></li>
-		<li role = "presentation"><a href="#prevencao">Consultoria e Projetos para a Prevenção de Perdas</a></li>
-		<li role = "presentation"><a href="#servicos">Serviços Especializados para o mercado varejista</a></li>
-		<li role = "presentation"><a href="#gestao">Gestão de Serviços e Apoio para Empresas Contratantes</a></li>
-		<li role = "presentation"><a href="#maodeobra">Mão de Obra Temporária</a></li>
-		<li id = "menu-serv" role = "presentation"><a href="menu">Menu dos Serviços</a></li>
-	  </ul>
-	</div>
+	<div class = "topo_fixed botao"><span>Lista de serviços</span></div>
+	<div class = "topo_fixed wrap clearfix" id = "stickyribbon"><?php wp_nav_menu(array('theme_location' => 'servicos',));?></div>
 
 	<div class = "top-size img-servico">
 		<h1 class = "col-md-offset-1 topo">serviços</h1>
@@ -184,3 +173,7 @@
 </div>
 
 <?php get_footer(); ?>
+
+<script src = "<?php bloginfo('stylesheet_directory');?>//js/menulateral.min.js"></script>
+
+

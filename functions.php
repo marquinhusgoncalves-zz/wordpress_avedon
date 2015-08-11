@@ -5,11 +5,6 @@
 
 	function avedon_resources() {
 		wp_enqueue_style( 'style', get_stylesheet_uri());
-		wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
-		wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array( 'jquery' ), '',  true );
-		wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array( 'jquery' ), '',  true );
-		wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/functions.min.js', array('jquery') );
-		// wp_enqueue_script( 'sticky', get_template_directory_uri() . '/js/sticky.js', array( 'jquery' ), '',  true );
 	}
 	add_action('wp_enqueue_scripts', 'avedon_resources');
 
@@ -30,7 +25,9 @@
 		function wpt_setup() {  
 		  register_nav_menus(
 			array(
-			  'header-menu' => __( 'Header Menu' ),
+			  'primario' => __( 'Primario Menu' ),
+			  'servicos' => __( 'Servicos Menu' ),
+			  'cases' => __( 'Cases Menu' ),
 			)
 		  );
 		} endif;

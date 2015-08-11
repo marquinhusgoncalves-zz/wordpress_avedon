@@ -1,13 +1,11 @@
 <?php get_header(); ?>
 <div class = "main">
 
-	<?php include("diferenca.php"); ?>
+	<div class = "diferenca"></div>
 
 	<?php include("banner.php"); ?>
 
-	<?php //include("chamada.php"); ?>
-
-	<div class = "chamada" style = "padding-left: 2%">
+	<div class = "chamada clearfix" style = "padding-left: 2%">
 		<div class = "col-md-4 box">
 			<h1 class = "titulo">Consultoria em segurança patrimonial</h1>
 			<p class = "texto">Projeto de Segurança Patrimonial, Monitoramento e Controles de Acesso, Projetos de Segurança Pessoal desenvolvidos para a proteção dos Executivos.</p>
@@ -32,7 +30,6 @@
 		</div>
 
 	</div>
-
 
 	<?php include("avedon.php"); ?>
 

@@ -7,7 +7,7 @@ $(function(smoothScroll) {
       
       if (target.length) {
         $("html, body").animate({
-          scrollTop: target.offset().top - 159
+          scrollTop: target.offset().top - 0
         }, 750);
       
         return false;

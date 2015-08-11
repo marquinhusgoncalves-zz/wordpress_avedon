@@ -18,15 +18,18 @@
 			</div>
 		</div>
 
-		<div class="scroll-to-top"><i class="glyphicon glyphicon-chevron-up"></i></div><!-- .scroll-to-top -->
+		<div class = "scroll-to-top"><i class = "fa fa-chevron-up"></i></div><!-- .scroll-to-top -->
 
 	</footer>
   </div> <!-- .container -->
 	
 </body>
 
-	<script src = "//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src = "//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src = "<?php bloginfo('stylesheet_directory');?>/js/smooth-scroll.min.js"></script>
+	<script src = "<?php bloginfo('stylesheet_directory');?>/js/scrolltop.min.js"></script>
+	<script src = "<?php bloginfo('stylesheet_directory');?>/js/toggle.min.js"></script>
 
 <?php wp_footer(); ?>
 </html>

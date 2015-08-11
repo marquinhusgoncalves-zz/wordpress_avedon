@@ -2,8 +2,8 @@
 
 <div class = "main">
 
-	<div class = "hidden-xs hidden-sm"><?php include("diferenca_menu.php"); ?></div>
-	<div class = "visible-xs-block visible-sm-block"><?php include("diferenca.php"); ?></div>
+	<div class = "diferenca_menu hidden-xs hidden-sm"></div>
+	<div class = "diferenca visible-xs-block visible-sm-block"></div>
 
 	<div class = "topo_fixed submenu hidden-xs hidden-sm" id = "stickyribbon">
 	  <ul>

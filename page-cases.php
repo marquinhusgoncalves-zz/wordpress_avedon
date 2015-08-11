@@ -1,23 +1,14 @@
 <?php get_header(); ?>
 <div class = "main cases" style = "background-color: white">
 
-	<div class = "hidden-xs hidden-sm"><?php include("diferenca_menu.php"); ?></div>
-	<div class = "visible-xs-block visible-sm-block"><?php include("diferenca.php"); ?></div>
+	<div class = "diferenca_menu"></div>
 
 	<div class = "top-size img-cases">
 		<h1 class = "col-md-offset-1 topo">cases</h1>
 	</div>
 
-	<div class = "topo_fixed wrap hidden-xs hidden-sm" id = "stickyribbon">
-	  <ul>
-	    <li role = "presentation"><a href="#supermercados">Supermercados</a></li>
-		<li role = "presentation"><a href="#departamento">Lojas de Departamento</a></li>
-		<li role = "presentation"><a href="#credpessoal">Lojas de Crédito Pessoal</a></li>
-		<li role = "presentation"><a href="#industrias">Indústrias</a></li>
-		<li role = "presentation"><a href="#escritorios">Escritórios e Edifícos Comerciais</a></li>
-		<li id = "menu-serv" role = "presentation"><a href="menu">Categorias</a></li>
-	  </ul>
-	</div>
+	<div class = "topo_fixed botao"><span>Categorias</span></div>
+	<div class = "topo_fixed wrap clearfix" id = "stickyribbon"><?php wp_nav_menu(array('theme_location' => 'cases',));?></div>
 
 	<a id = "anchor-name" name = "supermercados"></a>
 	<div class = "col-md-12 titulo-case">
@@ -52,3 +43,5 @@
 </div>
 
 <?php get_footer(); ?>
+
+<script src = "<?php bloginfo('stylesheet_directory');?>//js/menulateral.min.js"></script>
