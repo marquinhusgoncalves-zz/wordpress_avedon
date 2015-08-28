@@ -66,7 +66,7 @@
 get_header(); ?>
 <div class = "main" style = "background-color: #dbdbd8">
 
-  <?php include("diferenca.php"); ?>
+  <div class = "diferenca"></div>
 
 	<div style = "padding: 50px 4%">
 		<h1 class = "titulo">Entre em contato</h1>

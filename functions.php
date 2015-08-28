@@ -8,7 +8,7 @@
 	}
 	add_action('wp_enqueue_scripts', 'avedon_resources');
 
-	add_filter('show_admin_bar', '__return_false');
+	//add_filter('show_admin_bar', '__return_false');
 
 	function posts_on_homepage( $query ) {
 		if ( $query->is_home() && $query->is_main_query() ) {

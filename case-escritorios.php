@@ -5,7 +5,7 @@
 		 <?php while(have_posts()) : the_post(); ?>
 
 					<?php
-					$myposts = get_posts( 'cat=17&showposts=10&year=$current_year&monthnum=$current_month&order=ASC' );
+					$myposts = get_posts( 'cat=4&showposts=10&year=$current_year&monthnum=$current_month&order=ASC' );
 
 				foreach($myposts as $post) :
 					$nextpost++;

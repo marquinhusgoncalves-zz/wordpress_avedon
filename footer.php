@@ -5,7 +5,7 @@
 			<div class = "col-sm-8 col-md-6 adress">
 				<p class = "text-adress">Praça das Gardênias, 4 – Centro Comercial de Alphaville <br>06453-052 - Barueri - SP</p>
 				<p class = "text-adress noSkypeClass">Fone <span>(11)</span> <span>4208</span><span>-1622</span></p>
-				<a class = "text-link" href = "#">avedon@avedon.com.br</a>
+				<a class = "text-link" href = "mailto:avedon@avedon.com.br">avedon@avedon.com.br</a>
 			</div>
 
 			<div class = "col-sm-4 col-md-3 adress">
